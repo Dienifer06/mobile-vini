@@ -1,5 +1,7 @@
+import 'package:coffeshop/components/botao.dart';
 import 'package:coffeshop/components/logo.dart';
 import 'package:coffeshop/components/titulo.dart';
+import 'package:coffeshop/pages/telaProdutos.dart';
 import 'package:flutter/material.dart';
 
 class Telainicial extends StatelessWidget {
@@ -13,8 +15,10 @@ class Telainicial extends StatelessWidget {
         child: Column(
           children: [
             Titulo(valorDigitado: "coffe Shop"),
-            Titulo(valorDigitado: "entre na mlehor cafeteria"),
-            Logo()
+            Titulo(valorDigitado: "Entre na melhor cafeteria"),
+            SizedBox(height: 70), //define um espaça,mento entre eles
+            Logo(),
+            Botao(pagina: Telaprodutos())
             
           ],
         ),
